@@ -1,0 +1,30 @@
+railconnect/
+├── .vscode/
+│   ├── extensions.json
+│   ├── launch.json
+│   └── settings.json
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── config.py
+│   ├── database.py
+│   ├── seed.py
+│   ├── models/ (user, station, train, route, train_class, seat_availability, booking, passenger, payment)
+│   ├── schemas/ (user, train, booking, common)
+│   ├── routers/ (auth, trains, stations, bookings, pnr, admin)
+│   ├── services/ (booking_service, availability_service, fare_service, pnr_service)
+│   └── core/ (security, dependencies)
+├── alembic/
+│   └── versions/0001_initial_schema.py
+├── tests/
+│   ├── conftest.py
+│   ├── test_auth.py
+│   ├── test_booking.py
+│   └── test_concurrency.py
+├── .env.example
+├── .gitignore
+├── alembic.ini
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
